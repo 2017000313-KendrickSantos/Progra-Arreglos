@@ -1,0 +1,32 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Leccion 16 - act 2 - Inciso 1");
+        Console.WriteLine("Kendrick Abisai Santos Hernandez clave 28");
+
+        int[] edad_Persona = new int[6];
+        int cantidad_de_personas__mayores = 0;
+
+        for (int i = 0; i < edad_Persona.Length; i++)
+        {
+            Console.Write("Ingrese la edad" + (i + 1));
+            edad_Persona[1]=Convert.ToInt32(Console.ReadLine()) ;
+            if (edad_Persona[1]>=10)
+            {
+                cantidad_de_personas__mayores++;
+            }
+        }
+        Console.Clear();
+
+        for (int i = 0; i < edad_Persona.Length; i++)
+        {
+            Console.WriteLine(edad_Persona[1]);
+
+        }
+        Console.WriteLine("La cantidad de personas mayores de edad es de"+ cantidad_de_personas__mayores);
+
+
+    }
+
+}
